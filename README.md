@@ -31,10 +31,10 @@ This project demonstrates user authentication, role-based access (Admin, Seller,
 <H5>ecommerce-flask/<H5>
 <H5>│── app.py                # Main entry point (creates app)<H5>
 <H5>│── models.py             # Database models<H5>
-<H5>│── routes/<H5>
-<H5>│   ├── users.py          # User routes (login, register, dashboard)<H5>
-<H5>│   ├── products.py       # Product routes<H5>
-<H5>│   └── orders.py         # Order routes<H5>
+<H5>│── routes/
+    │   ├── users.py          # User routes (login, register, dashboard)
+    │   ├── products.py       # Product routes
+    │   └── orders.py         # Order routes<H5>
 <H5>│── templates/<H5>
 <H5>│   ├── users/            # HTML files for users<H5>
 <H5>│   ├── products/         # HTML files for products<H5>
