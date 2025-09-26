@@ -27,8 +27,6 @@ This project demonstrates user authentication, role-based access (Admin, Seller,
 <H5>Secure password hashing (werkzeug.security).<H5>
 <H5>Session-based login with role-based permissions.<H5>
 
-<H2>📂 Project Structure<H2>
-
 # 📂 Project Structure
 
 ```text
