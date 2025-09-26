@@ -50,7 +50,7 @@ ecommerce-flask/
 │── README.md             # Project documentation
 ```
 
-#⚙️ Installation
+# ⚙️ Installation
 <H2>Clone the repo<H2>
 
 <H5>git clone https://github.com/yourusername/ecommerce-flask.git
