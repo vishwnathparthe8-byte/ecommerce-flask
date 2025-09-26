@@ -9,10 +9,12 @@ This project demonstrates user authentication, role-based access (Admin, Seller,
 <H5>Seller: Add/delete their own products, view orders for their products.<H5>
 <H5>Customer: Browse products, place orders, cancel their own orders.<H5>
 
+
 <H2>🛍 Product Management<H2>
 <H5>View all products.<H5>
 <H5>Add new products (Seller only).<H5>
 <H5>Delete products (Seller → only own, Admin → all).<H5>
+
 
 <H2>📦 Order Management<H2>
 <H5>Place orders (Customer only).<H5>
@@ -26,6 +28,7 @@ This project demonstrates user authentication, role-based access (Admin, Seller,
 <H2>🔐 Authentication<H2>
 <H5>Secure password hashing (werkzeug.security).<H5>
 <H5>Session-based login with role-based permissions.<H5>
+
 
 # 📂 Project Structure
 
