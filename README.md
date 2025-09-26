@@ -48,40 +48,41 @@ ecommerce-flask/
 │── init_admin.py         # Script to create default admin
 │── requirements.txt      # Dependencies
 │── README.md             # Project documentation
+```
 
 
-Clone the repo
+<H2>Clone the repo<H2>
 
 git clone https://github.com/yourusername/ecommerce-flask.git
 cd ecommerce-flask
 
 
-Create virtual environment
+<H2>Create virtual environment<H2>
 
 python -m venv venv
 source venv/bin/activate   # On Mac/Linux
 venv\Scripts\activate      # On Windows
 
 
-Install dependencies
+<H2>Install dependencies<H2>
 
 pip install -r requirements.txt
 
 
-Initialize the database
+<H2>Initialize the database<H2>
 
 python init_admin.py
 
 
-This will create the tables and add a default admin:
+<H2>This will create the tables and add a default admin:<H2>
 
 Username: admin
 Password: admin123
 
 
-Run the app
+<H2>Run the app<H2>
 
 flask run
 
 
-App will run at: http://127.0.0.1:5000
+<H2>App will run at: http://127.0.0.1:5000<H2>
