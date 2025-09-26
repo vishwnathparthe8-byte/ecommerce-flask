@@ -1,0 +1,189 @@
+/* ===== Global ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #11998e, #38ef7d); /* teal → green */
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+/* ===== Headings ===== */
+h1, h2, h3 {
+    text-align: center;
+    color: #1a2a3a; /* dark blue-grey */
+    margin-bottom: 20px;
+}
+
+/* ===== Tables ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    text-align: center;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #e8f5e9; /* soft green */
+    color: #1b5e20; /* dark green */
+}
+
+tr:hover {
+    background-color: #f0f9ff; /* very light blue */
+}
+
+/* ===== Buttons ===== */
+a.button, button {
+    padding: 8px 15px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+a.button {
+    background-image: linear-gradient(45deg, #00c6ff, #0072ff); /* blue gradient */
+}
+
+a.button:hover {
+    background-image: linear-gradient(45deg, #0090d6, #005bb5);
+}
+
+.delete {
+    background-color: #ff4b5c; /* coral red */
+}
+
+.delete:hover {
+    background-color: #e63946; /* darker red */
+}
+
+/* ===== Forms ===== */
+input[type="text"], input[type="number"], input[type="password"], input[type="email"] {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 8px;
+    border: 1px solid #bbb;
+    width: 80%;
+}
+
+button[type="submit"] {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-image: linear-gradient(45deg, #6a11cb, #38ef7d); /* purple → green */
+}
+
+button[type="submit"]:hover {
+    background-image: linear-gradient(45deg, #5c0ebd, #2ecc71);
+}
+
+/* ===== Add Product / Order Form ===== */
+.add-product, .place-order {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* ===== Messages ===== */
+.flash {
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.flash-success {
+    background-color: #27ae60; /* green */
+    color: white;
+}
+
+.flash-danger {
+    background-color: #e74c3c; /* red */
+    color: white;
+}
+
+.flash-warning {
+    background-color: #f1c40f; /* yellow */
+    color: white;
+}
+
+.info {
+    font-size: 16px;
+    color: #444;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* ===== Links ===== */
+a {
+    text-decoration: none;
+    color: #1e3c72; /* dark blue */
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9; /* brighter blue */
+}
+
+/* ===== Dashboard Cards ===== */
+.dashboard-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #fefefe; /* white-ish */
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0,0,0,0.25);
+}
+
+.card i {
+    font-size: 40px;
+    color: #00c6ff; /* cyan */
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+.card .button {
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    background-image: linear-gradient(45deg, #00c6ff, #38ef7d); /* cyan → green */
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.card .button:hover {
+    background-image: linear-gradient(45deg, #0090d6, #27ae60);
+}

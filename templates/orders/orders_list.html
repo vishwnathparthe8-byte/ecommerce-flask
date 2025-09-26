@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Orders - -vegas_mart</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #f6d365, #fda085);
+        margin: 0;
+        padding: 20px;
+    }
+
+    .container {
+        background: white;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        max-width: 1000px;
+        margin: auto;
+        overflow-x: auto;
+    }
+
+    h2 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 25px;
+        font-size: 28px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        min-width: 600px;
+    }
+
+    th, td {
+        text-align: center;
+        padding: 12px 15px;
+        border-bottom: 1px solid #ddd;
+        font-size: 16px;
+    }
+
+    th {
+        background-color: #4CAF50;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    tr:hover {
+        background-color: #f1f1f1;
+        transform: scale(1.01);
+        transition: 0.2s;
+    }
+
+    .button, button {
+        padding: 8px 15px;
+        border-radius: 8px;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-weight: bold;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    .delete {
+        background-color: #f44336;
+    }
+
+    .delete:hover {
+        background-color: #da190b;
+    }
+
+    .status-active {
+        color: white;
+        background-color: #4CAF50;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    .status-cancelled {
+        color: white;
+        background-color: #f44336;
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 14px;
+    }
+
+    .info {
+        font-size: 18px;
+        color: #555;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .back-button {
+        display: inline-block;
+        margin-top: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
+    .back-button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h2>Orders</h2>
+
+    {% if orders|length == 0 %}
+        <p class="info">No orders found.</p>
+    {% else %}
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID</th>
+                <th>Product</th>
+                <th>Customer</th>
+                <th>Quantity</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %}
+            <tr>
+                <td>{{ order.OrderID }}</td>
+                <td>{{ order.product.Name }}</td>
+                <td>{{ order.user.Username }}</td>
+                <td>{{ order.Quantity }}</td>
+                <td>{{ order.OrderDate.strftime('%Y-%m-%d %H:%M') }}</td>
+                <td>
+                    {% if order.Status == 'Active' %}
+                        <span class="status-active">{{ order.Status }}</span>
+                    {% else %}
+                        <span class="status-cancelled">{{ order.Status }}</span>
+                    {% endif %}
+                </td>
+                <td>
+                    {% if session.get('role') == 'Admin' or (session.get('role') == 'Customer' and order.Status == 'Active') %}
+                        <form action="{{ url_for('orders.cancel_order', order_id=order.OrderID) }}" method="POST" style="display:inline;">
+                            <button type="submit" class="delete">Cancel</button>
+                        </form>
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+
+    <div style="text-align:center;">
+        <a class="back-button" href="{{ url_for('users.dashboard') }}">Back to Dashboard</a>
+    </div>
+</div>
+</body>
+</html>
