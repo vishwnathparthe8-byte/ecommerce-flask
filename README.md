@@ -52,39 +52,37 @@ ecommerce-flask/
 
 # ⚙️ Installation
 ```text
-<H2>Clone the repo<H2>
+Clone the repo
 
-<H5>git clone https://github.com/yourusername/ecommerce-flask.git
-cd ecommerce-flask<H5>
+git clone https://github.com/yourusername/ecommerce-flask.git
+cd ecommerce-flask
 
 
-<H2>Create virtual environment<H2>
+Create virtual environment
 
-<H5>python -m venv venv
+python -m venv venv
 source venv/bin/activate   # On Mac/Linux
-venv\Scripts\activate      # On Windows<H5>
+venv\Scripts\activate      # On Windows
 
 
-<H2>Install dependencies<H2>
+Install dependencies
 
-<H5>pip install -r requirements.txt<H5>
-
-
-<H2>Initialize the database<H2>
-
-<H5>python init_admin.py<H5>
+pip install -r requirements.txt
 
 
-<H2>This will create the tables and add a default admin:<H2>
+Initialize the database
 
-<H5>Username: admin
-Password: admin123<H5>
-
-
-<H2>Run the app<H2>
-
-<H5>flask run<H5>
+python init_admin.py
 
 
-<H5>App will run at: http://127.0.0.1:5000<H5>
+This will create the tables and add a default admin:
+
+Username: admin
+Password: admin123
+
+
+Run the app
+flask run
+
+App will run at: http://127.0.0.1:5000
 ```
