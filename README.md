@@ -22,25 +22,28 @@ This project demonstrates user authentication, role-based access (Admin, Seller,
 <H5>Customer → their own orders<H5>
 <H5>Cancel orders (Customer for own / Admin for all).<H5>
 
+
 <H2>🔐 Authentication<H2>
 <H5>Secure password hashing (werkzeug.security).<H5>
 <H5>Session-based login with role-based permissions.<H5>
 
 <H2>📂 Project Structure<H2>
 
-ecommerce-flask/
-│── app.py # Main entry point (creates app)
-│── models.py # Database models
-│── routes/
-│ ├── users.py # User routes (login, register, dashboard)
-│ ├── products.py # Product routes
-│ └── orders.py # Order routes
-│── templates/
-│ ├── users/ # HTML files for users
-│ ├── products/ # HTML files for products
-│ └── orders/ # HTML files for orders
-│── static/ # CSS, JS, images
-│── init_admin.py # Script to create default admin
-│── requirements.txt # Dependencies
-│── README.md # Project documentation
+# 📂 Project Structure
 
+```text
+ecommerce-flask/
+│── app.py                # Main entry point (creates app)
+│── models.py             # Database models
+│── routes/
+│   ├── users.py          # User routes (login, register, dashboard)
+│   ├── products.py       # Product routes
+│   └── orders.py         # Order routes
+│── templates/
+│   ├── users/            # HTML files for users
+│   ├── products/         # HTML files for products
+│   └── orders/           # HTML files for orders
+│── static/               # CSS, JS, images
+│── init_admin.py         # Script to create default admin
+│── requirements.txt      # Dependencies
+│── README.md             # Project documentation
