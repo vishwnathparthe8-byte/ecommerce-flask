@@ -28,19 +28,19 @@ This project demonstrates user authentication, role-based access (Admin, Seller,
 
 <H2>📂 Project Structure<H2>
 
-<H5>ecommerce-flask/<H5>
-<H5>│── app.py                # Main entry point (creates app)<H5>
-<H5>│── models.py             # Database models<H5>
-<H5>│── routes/
-    │   ├── users.py          # User routes (login, register, dashboard)
-    │   ├── products.py       # Product routes
-    │   └── orders.py         # Order routes<H5>
-<H5>│── templates/<H5>
-<H5>│   ├── users/            # HTML files for users<H5>
-<H5>│   ├── products/         # HTML files for products<H5>
-<H5>│   └── orders/           # HTML files for orders<H5>
-<H5>│── static/               # CSS, JS, images<H5>
-<H5>│── init_admin.py         # Script to create default admin<H5>
-<H5>│── requirements.txt      # Dependencies<H5>
-<H5>│── README.md             # Project documentation<H5>
+ecommerce-flask/
+│── app.py # Main entry point (creates app)
+│── models.py # Database models
+│── routes/
+│ ├── users.py # User routes (login, register, dashboard)
+│ ├── products.py # Product routes
+│ └── orders.py # Order routes
+│── templates/
+│ ├── users/ # HTML files for users
+│ ├── products/ # HTML files for products
+│ └── orders/ # HTML files for orders
+│── static/ # CSS, JS, images
+│── init_admin.py # Script to create default admin
+│── requirements.txt # Dependencies
+│── README.md # Project documentation
 
