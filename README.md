@@ -51,6 +51,7 @@ ecommerce-flask/
 ```
 
 # ⚙️ Installation
+```text
 <H2>Clone the repo<H2>
 
 <H5>git clone https://github.com/yourusername/ecommerce-flask.git
@@ -86,3 +87,4 @@ Password: admin123<H5>
 
 
 <H5>App will run at: http://127.0.0.1:5000<H5>
+```
