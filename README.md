@@ -1,5 +1,44 @@
 <H1>📦E-commerce Flask App<H1>
 
+ ```t
+  Clone the repo
+
+git clone https://github.com/yourusername/ecommerce-flask.git
+cd ecommerce-flask
+
+
+Create virtual environment
+
+python -m venv venv
+source venv/bin/activate   # On Mac/Linux
+venv\Scripts\activate      # On Windows
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Initialize the database
+
+python init_admin.py
+
+
+This will create the tables and add a default admin:
+
+Username: admin
+Password: admin123
+
+
+Run the app
+flask run
+
+App will run at: http://127.0.0.1:5000
+  ```
+  
+  
+  
+  
 <H5>A simple E-commerce web application built with Flask, SQLAlchemy, and SQLite.
 This project demonstrates user authentication, role-based access (Admin, Seller, Customer), and basic product/order management.<H5>
 
