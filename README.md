@@ -1,7 +1,11 @@
 <H1>📦E-commerce Flask App<H1>
 
- ```t
-  Clone the repo
+
+
+ 
+<H1>setup instructions<H1>
+ 
+<h5> Clone the repo
 
 git clone https://github.com/yourusername/ecommerce-flask.git
 cd ecommerce-flask
@@ -33,7 +37,7 @@ Password: admin123
 Run the app
 flask run
 
-App will run at: http://127.0.0.1:5000
+App will run at: http://127.0.0.1: <h5>
   ```
   
   
