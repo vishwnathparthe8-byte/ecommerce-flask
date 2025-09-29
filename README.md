@@ -3,9 +3,9 @@
 
 
  
-<H1>setup instructions<H1>
- 
-<h5> Clone the repo
+# ⚙️ Installation
+```text
+Clone the repo
 
 git clone https://github.com/yourusername/ecommerce-flask.git
 cd ecommerce-flask
@@ -37,8 +37,9 @@ Password: admin123
 Run the app
 flask run
 
-App will run at: http://127.0.0.1: <h5>
-  ```
+App will run at: http://127.0.0.1:5000
+```
+
   
   
   
@@ -93,40 +94,4 @@ ecommerce-flask/
 │── README.md             # Project documentation
 ```
 
-# ⚙️ Installation
-```text
-Clone the repo
-
-git clone https://github.com/yourusername/ecommerce-flask.git
-cd ecommerce-flask
-
-
-Create virtual environment
-
-python -m venv venv
-source venv/bin/activate   # On Mac/Linux
-venv\Scripts\activate      # On Windows
-
-
-Install dependencies
-
-pip install -r requirements.txt
-
-
-Initialize the database
-
-python init_admin.py
-
-
-This will create the tables and add a default admin:
-
-Username: admin
-Password: admin123
-
-
-Run the app
-flask run
-
-App will run at: http://127.0.0.1:5000
-```
 
